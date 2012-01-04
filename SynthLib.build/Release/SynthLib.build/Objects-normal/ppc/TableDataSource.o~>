@@ -1,0 +1,4 @@
+/Users/andrewhughes/Programming Documents/SynthLib/TableDataSource.m: In function '-[TableDataSource tableView:sortDescriptorsDidChange:]':
+/Users/andrewhughes/Programming Documents/SynthLib/TableDataSource.m:73: warning: unused variable 'collection'
+/Users/andrewhughes/Programming Documents/SynthLib/TableDataSource.m: At top level:
+/Users/andrewhughes/Programming Documents/SynthLib/../StoryWriter/Utility.h:15: warning: '_sharedUndoManager' defined but not used

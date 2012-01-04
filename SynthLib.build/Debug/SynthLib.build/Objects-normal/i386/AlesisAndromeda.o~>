@@ -1,0 +1,10 @@
+/Users/andrewhughes/Programming Documents/SynthLib/AlesisAndromeda.m: In function '-[AlesisAndromeda receiveSysexMessage:]':
+/Users/andrewhughes/Programming Documents/SynthLib/AlesisAndromeda.m:111: error: 'A6_MIX_DATA_LENGTH' undeclared (first use in this function)
+/Users/andrewhughes/Programming Documents/SynthLib/AlesisAndromeda.m:111: error: (Each undeclared identifier is reported only once
+/Users/andrewhughes/Programming Documents/SynthLib/AlesisAndromeda.m:111: error: for each function it appears in.)
+{standard input}:59:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:59:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:55:non-relocatable subtraction expression, "L_OBJC_CLASS_AlesisAndromeda" minus "L00000000001$pb"
+{standard input}:55:symbol: "L_OBJC_CLASS_AlesisAndromeda" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_AlesisAndromeda
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0

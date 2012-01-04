@@ -1,0 +1,270 @@
+//
+//  Andromeda.m
+//  SynthLib
+//
+//  Created by Andrew Hughes on 11/25/08.
+//  Copyright 2008 __MyCompanyName__. All rights reserved.
+//
+
+#import "Andromeda.h"
+#import "AProgram.h"
+#import "AndromedaProgram.h"
+
+
+@implementation Andromeda
+
+- (id)initWithInputPort: (int) _inputPort outputPort: (int) _outputPort
+{
+
+	if ((self = [super initWithInputPort:_inputPort outputPort:_outputPort]))
+	{
+
+
+	}
+	return self;
+	
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// PROGRAM DATA READ/WRITE METHODS
+
+- (void) setNameForProgramData: (NSMutableData*) data name: (NSString*) newName
+{	
+	[data replaceBytesInRange: NSMakeRange(2,15) withBytes: [newName dataUsingEncoding: NSASCIIStringEncoding] ];
+}
+
+
+- (NSString*) nameForProgramData: (NSData*) data
+{
+	//return [NSString stringWithString:@"NAME"];
+	
+	NSString * name = [NSString alloc];
+	
+	Byte buffer[16];	
+	
+	[data getBytes: &buffer[0] range: NSMakeRange(2,16)];
+	name = [name initWithBytes: &buffer[0] length: 16 encoding: NSASCIIStringEncoding];
+	[name autorelease];
+	return name;
+
+}
+
+-(void) receiveSysexMessage: (NSData *) data
+{
+
+	//unpack data
+	NSMutableData * unpackedData = [[NSMutableData alloc] initWithLength:0];
+	NSMutableData * dataBytes = [[NSMutableData alloc] initWithLength:2341];
+
+	unsigned char buffer[7];
+	unsigned char* bytes = (unsigned char*)[data bytes];
+
+	// 6 header bytes plus the packed zero = 7 bytes to skip
+	int i = 8;  // start at 8 to begin after 8-byte header
+	
+	/* 292 is the number of complete 8-byte groups in the dump (293*8 = 2344), leaving us with 4 bytes to deal with
+	   at the end of the loop.
+	*/ 
+	while (i <  2344)  
+	{
+		
+		/* Necessary to convert the needlessly complicated 'packed' data format the A6 sends to the data format for use on computer
+			- A6 sends 2350 bytes of 'packed' data
+			- this includes an 8 byte header, which we ignore for the moment, and a trailing 0xF7
+			- leaving 2341 bytes of packed program data.
+			- the A6 uses 8 bytes to send 7 bytes of data (why???)
+			- have to do a bunch of OR'ing and bitshifting to 'unpack' the data. (see sysex implementation)
+		
+		*/
+		buffer[0] =  bytes[i+0]       | (bytes[i+1] << 7);
+		buffer[1] = (bytes[i+1] >> 1) | (bytes[i+2] << 6);
+		buffer[2] = (bytes[i+2] >> 2) | (bytes[i+3] << 5);
+		buffer[3] = (bytes[i+3] >> 3) | (bytes[i+4] << 4);
+		buffer[4] = (bytes[i+4] >> 4) | (bytes[i+5] << 3);
+		buffer[5] = (bytes[i+5] >> 5) | (bytes[i+6] << 2);
+		buffer[6] = (bytes[i+6] >> 6) | (bytes[i+7] << 1);
+		
+		[unpackedData appendBytes: &buffer[0] length:7];
+
+		//NSLog(@"%2X %2X %2X %2X %2X %2X %2X", buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5], buffer[6]);
+
+		buffer[0] = 0x0;
+		buffer[1] = 0x0;
+		buffer[2] = 0x0;
+		buffer[3] = 0x0;
+		buffer[4] = 0x0;
+		buffer[5] = 0x0;
+		buffer[6] = 0x0;
+		
+		i = i + 8;
+	}
+	
+	buffer[0] =  bytes[i+0]       | (bytes[i+1] << 7);
+	buffer[1] = (bytes[i+1] >> 1) | (bytes[i+2] << 6);
+	buffer[2] = (bytes[i+2] >> 2) | (bytes[i+3] << 5);
+	buffer[3] = (bytes[i+3] >> 3) | (bytes[i+4] << 4);
+		
+	[unpackedData appendBytes: &buffer[0] length:4];
+		
+	//NSLog(@"program size = %d", [unpackedData length]);
+	
+	//AProgram * newProgram = [[AProgram alloc] initWithSynth: self data: [unpackedData mutableCopy]];
+	
+	[data getBytes: [dataBytes mutableBytes] range: NSMakeRange(8, 2341)];
+	
+	AndromedaProgram * newProgram = [[AndromedaProgram alloc] initWithSynth: self data: [dataBytes mutableCopy]];
+	
+	[requestingCollection addItem: newProgram];
+	[newProgram autorelease];
+	[unpackedData autorelease];
+	[dataBytes autorelease];
+	
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// SYSEX REQUEST MESSAGES
+
+
+// Request AProgram from Andromeda
+- (void)requestProgramDump: (int) programNumber bankNumber: (int) bankNumber forCollection: (ACollection*) collection
+{
+	
+	requestingCollection = collection;
+	
+	NSAssert(programNumber >= 0 && programNumber <= 127, @"Andromeda: patchNumber out of bounds!");
+	NSAssert(bankNumber >= 0 && bankNumber <= 2, @"Andromeda: bankNumber out of bounds!");
+
+	/*
+		AProgram Dump Request Message
+		bank: 0=User, 1=Preset1, 2=Preset2
+		prog: 0...127
+	*/
+	//				   FO	00   00   0E   1D   01 bank prog F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x01,0x00,0x00,0xf7};
+
+	request[6] = bankNumber;
+	request[7] = programNumber;
+
+	[midi sendShortSysex: request size: 9];
+
+}
+
+// Request one of the 17 edit buffers (16 for mix programs, 1 for program)
+- (void)requestProgramEditBufferDump: (int) bufferNumber forCollection: (ACollection*) collection
+{
+	requestingCollection = collection;
+
+	NSAssert(bufferNumber >= 0 && bufferNumber <= 16, @"Andromeda: bufferNumber out of bounds!");
+
+	/*
+		AProgram Edit Buffer Dump Request Message
+		num: 0-15=mix program edit buffers for mix channels 1-16
+			 16=program edit buffer
+	*/
+	//				   FO	00   00   0E   1D   03  num   F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x03,0x00,0xf7};
+
+	request[7] = bufferNumber;
+
+	[midi sendShortSysex: request size: 8];
+}
+
+// Request program bank
+- (void)requestProgramBankDump: (int) bankNumber forCollection: (ACollection*) collection
+{
+	requestingCollection = collection;
+
+	NSAssert(bankNumber >= 0 && bankNumber <= 2, @"Andromeda: bankNumber out of bounds!");
+
+	/*
+		AProgram Bank Dump Request Message
+		num: 0=user, 1=preset1, 2=preset2
+	*/
+	//				   FO   00   00   0E   1D   0A num  F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x0a,0x00,0xf7};
+
+	request[6] = bankNumber;
+
+	[midi sendShortSysex: request size: 8];
+}
+
+// Request mix
+- (void)requestMixDump: (int) mixNumber bankNumber: (int) bankNumber forCollection: (ACollection*) collection
+{
+	NSAssert(mixNumber >= 0 && mixNumber <= 127, @"Andromeda: mixNumber out of bounds!");
+	NSAssert(bankNumber >= 0 && bankNumber <= 2, @"Andromeda: bankNumber out of bounds!");
+
+	requestingCollection = collection;
+
+	/*
+		Mix Dump Request Message
+		bank: 0=User, 1=Preset1, 2=Preset2
+		mix: 0...127
+	*/
+	//						  FO   00   00   0E   1D   05 bank mix  F7
+	Byte mixDumpRequest[]= {0xf0,0x00,0x00,0x0e,0x1d,0x05,0x00,0x00,0xf7};
+
+	mixDumpRequest[6] = bankNumber;
+	mixDumpRequest[7] = mixNumber;
+
+	[midi sendShortSysex: mixDumpRequest size: 9];
+
+}
+
+// Request mix edit buffer
+- (void)requestMixEditBufferDumpForCollection: (ACollection*) collection
+{
+	requestingCollection = collection;
+
+	//				   FO	00   00   0E   1D   07   00   F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x07,0x00,0xf7};
+
+	[midi sendShortSysex: request size: 8];
+
+}
+
+// Request mix bank
+- (void)requestMixBankDump: (int) bankNumber forCollection: (ACollection*) collection
+{
+	NSAssert(bankNumber >= 0 && bankNumber <= 1, @"Andromeda: bankNumber out of bounds!");
+
+	requestingCollection = collection;
+
+	/*
+		Mix Bank Dump Request Message
+		num: 0=user, 1=preset1
+	*/
+	//				   FO   00   00   0E   1D   0B num  F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x0b,0x00,0xf7};
+
+	request[6] = bankNumber;
+
+	[midi sendShortSysex: request size: 8];
+}
+
+// Request global data dump
+- (void)requestGlobalDataDumpForCollection: (ACollection*) collection
+{
+	requestingCollection = collection;
+
+	//				   FO	00   00   0E   1D   09   00   F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x09,0x00,0xf7};
+
+	[midi sendShortSysex: request size: 8];
+
+}
+
+// Request to dump all: User programs, user mixes, and global data
+-(void)requestAllDumpForCollection: (ACollection*) collection
+{
+	requestingCollection = collection;
+
+	//				   FO	00   00   0E   1D   0C   00   F7
+	Byte request[]= {0xf0,0x00,0x00,0x0e,0x1d,0x0c,0x00,0xf7};
+
+	[midi sendShortSysex: request size: 8];
+
+}
+
+@end

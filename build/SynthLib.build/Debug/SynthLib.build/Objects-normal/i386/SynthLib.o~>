@@ -1,0 +1,5 @@
+/Users/andrewhughes/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib awakeFromNib]':
+/Users/andrewhughes/Programming Documents/SynthLib/SynthLib.m:34: error: 'midi' undeclared (first use in this function)
+/Users/andrewhughes/Programming Documents/SynthLib/SynthLib.m:34: error: (Each undeclared identifier is reported only once
+/Users/andrewhughes/Programming Documents/SynthLib/SynthLib.m:34: error: for each function it appears in.)
+/Users/andrewhughes/Programming Documents/SynthLib/SynthLib.m:34: error: 'Midi' undeclared (first use in this function)

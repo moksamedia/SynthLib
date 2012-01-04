@@ -1,0 +1,8 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf430
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\f0\fs20 \cf2 24 December 2008\
+- Previously, to implement undo, when I deleted items from the table view, I was using a ItemAndRow object to save the item itself and its previous row index number.  All of the deleted items were stored in an array and sent to the undo manager packaged in these ItemAndRow objects.  This allowed me to undo delete operations and restore the items to their proper rows (assuming that the table was in the same sort state - which led me to implement sort undo.)\
+- I have decided, in the interest of simplicity, to implement this another way.  For sort undo, I save a copy of the two collection arrays: theCollection and hiddenCollection.  To undo, I simply set these into the collection object.  The arrays are shallow copies that retain the items, so the deleted items stick around until the array is released.  This costs a little more memory in the undo stack, but is probably worth it for sake of simplicity and understandability.}

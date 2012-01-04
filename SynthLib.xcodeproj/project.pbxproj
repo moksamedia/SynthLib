@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47F8D86714B4D8890073C76C /* CoreMIDI in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F8D86614B4D8890073C76C /* CoreMIDI */; };
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* SynthLib.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* SynthLib.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* SynthLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* SynthLib.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		D706E9B00ED9EDAB00A8FA7A /* Midi.m in Sources */ = {isa = PBXBuildFile; fileRef = D706E9AF0ED9EDAB00A8FA7A /* Midi.m */; };
+		D718786D0EF8ECF200136C9E /* AlesisAndromeda.m in Sources */ = {isa = PBXBuildFile; fileRef = D718786C0EF8ECF200136C9E /* AlesisAndromeda.m */; };
+		D71B196B0EF895E700FF948F /* AndromedaProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D71B196A0EF895E700FF948F /* AndromedaProgram.m */; };
+		D71DE06E0F02D93100F36F99 /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D71DE06D0F02D93100F36F99 /* Notes.rtf */; };
+		D745F37B0EFAA980002479FF /* SynthFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D745F37A0EFAA980002479FF /* SynthFactory.m */; };
+		D745F58E0EFAB487002479FF /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = D745F58D0EFAB487002479FF /* Utility.m */; };
+		D76497DF0EFFAFBB0037795C /* SynthLib.icns in Resources */ = {isa = PBXBuildFile; fileRef = D76497DE0EFFAFBB0037795C /* SynthLib.icns */; };
+		D764DEBD0EFADB450004A53B /* YamahaPCM91.m in Sources */ = {isa = PBXBuildFile; fileRef = D764DEBC0EFADB450004A53B /* YamahaPCM91.m */; };
+		D779F7320EFCEE2700292772 /* ACollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D779F7310EFCEE2700292772 /* ACollectionItem.m */; };
+		D77D05DD0EFF8034004BCC75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D77D05DB0EFF8034004BCC75 /* AppDelegate.m */; };
+		D795C9840F337CE300E08E59 /* MidiSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = D71440790F2FEB3E007AA60D /* MidiSetup.m */; };
+		D7A3A4960F32419600D55587 /* AGlobalDump.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3A4950F32419600D55587 /* AGlobalDump.m */; };
+		D7A3A58D0F324B6700D55587 /* AMix.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3A58C0F324B6700D55587 /* AMix.m */; };
+		D7A3A5900F324EEE00D55587 /* AndromedaMix.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3A58F0F324EEE00D55587 /* AndromedaMix.m */; };
+		D7C3D6B40F0572B60069D34E /* MidiSetup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C3D6B30F0572B60069D34E /* MidiSetup.xib */; };
+		D7C731B10F36B2A900DD2F17 /* programs notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D7C731B00F36B2A900DD2F17 /* programs notes.rtf */; };
+		D7CAA7960EFB2CF400D51DD8 /* YamahaPCM91Program.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CAA7950EFB2CF400D51DD8 /* YamahaPCM91Program.m */; };
+		D7D678100F00C748001AACAC /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D6780F0F00C748001AACAC /* MyTableView.m */; };
+		D7F6D9890EDB1CEF003BBFEF /* ASynth.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F6D9880EDB1CEF003BBFEF /* ASynth.m */; };
+		D7FC49E30EF82ED100F3BF2D /* TableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FC49E20EF82ED100F3BF2D /* TableDataSource.m */; };
+		D7FC4A270EF8314A00F3BF2D /* ACollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FC4A260EF8314A00F3BF2D /* ACollection.m */; };
+		D7FD06F60EDF0EAB0057BE5D /* AProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD06F50EDF0EAB0057BE5D /* AProgram.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* SynthLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthLib.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* SynthLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthLib.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SynthLib.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* SynthLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthLib_Prefix.pch; sourceTree = "<group>"; };
+		4737210A13D1F99300186BE6 /* SynthLibApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SynthLibApp-Info.plist"; sourceTree = "<group>"; };
+		47CE472F13D1F6480073A6A8 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		47F8D86614B4D8890073C76C /* CoreMIDI */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreMIDI; path = ../../../../System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* SynthLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynthLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D706E9AE0ED9EDAB00A8FA7A /* Midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Midi.h; sourceTree = "<group>"; };
+		D706E9AF0ED9EDAB00A8FA7A /* Midi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Midi.m; sourceTree = "<group>"; };
+		D71440780F2FEB3E007AA60D /* MidiSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiSetup.h; sourceTree = "<group>"; };
+		D71440790F2FEB3E007AA60D /* MidiSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiSetup.m; sourceTree = "<group>"; };
+		D718786C0EF8ECF200136C9E /* AlesisAndromeda.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AlesisAndromeda.m; sourceTree = "<group>"; };
+		D71B19690EF895E700FF948F /* AndromedaProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndromedaProgram.h; sourceTree = "<group>"; };
+		D71B196A0EF895E700FF948F /* AndromedaProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndromedaProgram.m; sourceTree = "<group>"; };
+		D71DE06D0F02D93100F36F99 /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		D745F3790EFAA980002479FF /* SynthFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthFactory.h; sourceTree = "<group>"; };
+		D745F37A0EFAA980002479FF /* SynthFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthFactory.m; sourceTree = "<group>"; };
+		D745F58C0EFAB482002479FF /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		D745F58D0EFAB487002479FF /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		D76497DE0EFFAFBB0037795C /* SynthLib.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SynthLib.icns; sourceTree = "<group>"; };
+		D764DEBB0EFADB450004A53B /* YamahaPCM91.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YamahaPCM91.h; sourceTree = "<group>"; };
+		D764DEBC0EFADB450004A53B /* YamahaPCM91.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YamahaPCM91.m; sourceTree = "<group>"; };
+		D779F7300EFCEE2700292772 /* ACollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACollectionItem.h; sourceTree = "<group>"; };
+		D779F7310EFCEE2700292772 /* ACollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACollectionItem.m; sourceTree = "<group>"; };
+		D77D05DB0EFF8034004BCC75 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D77D05DC0EFF8034004BCC75 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7A3A4940F32419600D55587 /* AGlobalDump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGlobalDump.h; sourceTree = "<group>"; };
+		D7A3A4950F32419600D55587 /* AGlobalDump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGlobalDump.m; sourceTree = "<group>"; };
+		D7A3A4980F3241F700D55587 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		D7A3A58B0F324B6700D55587 /* AMix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMix.h; sourceTree = "<group>"; };
+		D7A3A58C0F324B6700D55587 /* AMix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMix.m; sourceTree = "<group>"; };
+		D7A3A58E0F324EEE00D55587 /* AndromedaMix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndromedaMix.h; sourceTree = "<group>"; };
+		D7A3A58F0F324EEE00D55587 /* AndromedaMix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndromedaMix.m; sourceTree = "<group>"; };
+		D7AC8AAD0EDD1BB400157098 /* AlesisAndromeda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlesisAndromeda.h; sourceTree = "<group>"; };
+		D7AC8AAE0EDD1BB400157098 /* Andromeda.bak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Andromeda.bak; sourceTree = "<group>"; };
+		D7C3D6B30F0572B60069D34E /* MidiSetup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MidiSetup.xib; sourceTree = "<group>"; };
+		D7C731B00F36B2A900DD2F17 /* programs notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "programs notes.rtf"; sourceTree = "<group>"; };
+		D7CAA7940EFB2CF400D51DD8 /* YamahaPCM91Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YamahaPCM91Program.h; sourceTree = "<group>"; };
+		D7CAA7950EFB2CF400D51DD8 /* YamahaPCM91Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YamahaPCM91Program.m; sourceTree = "<group>"; };
+		D7D6780E0F00C748001AACAC /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		D7D6780F0F00C748001AACAC /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		D7F6D9870EDB1CEF003BBFEF /* ASynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASynth.h; sourceTree = "<group>"; };
+		D7F6D9880EDB1CEF003BBFEF /* ASynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASynth.m; sourceTree = "<group>"; };
+		D7FC49E10EF82ED100F3BF2D /* TableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDataSource.h; sourceTree = "<group>"; };
+		D7FC49E20EF82ED100F3BF2D /* TableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDataSource.m; sourceTree = "<group>"; };
+		D7FC4A250EF8314A00F3BF2D /* ACollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACollection.h; sourceTree = "<group>"; };
+		D7FC4A260EF8314A00F3BF2D /* ACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACollection.m; sourceTree = "<group>"; };
+		D7FD06F40EDF0EAB0057BE5D /* AProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AProgram.h; sourceTree = "<group>"; };
+		D7FD06F50EDF0EAB0057BE5D /* AProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AProgram.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F8D86714B4D8890073C76C /* CoreMIDI in Frameworks */,
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				47CE472F13D1F6480073A6A8 /* CoreMIDI.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* SynthLib.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* SynthLib */ = {
+			isa = PBXGroup;
+			children = (
+				47F8D86614B4D8890073C76C /* CoreMIDI */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				4737210A13D1F99300186BE6 /* SynthLibApp-Info.plist */,
+			);
+			name = SynthLib;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D7D6780E0F00C748001AACAC /* MyTableView.h */,
+				D7D6780F0F00C748001AACAC /* MyTableView.m */,
+				D77D05DC0EFF8034004BCC75 /* AppDelegate.h */,
+				D77D05DB0EFF8034004BCC75 /* AppDelegate.m */,
+				D71440780F2FEB3E007AA60D /* MidiSetup.h */,
+				D71440790F2FEB3E007AA60D /* MidiSetup.m */,
+				2A37F4AEFDCFA73011CA2CEA /* SynthLib.h */,
+				2A37F4ACFDCFA73011CA2CEA /* SynthLib.m */,
+				D7FC49E10EF82ED100F3BF2D /* TableDataSource.h */,
+				D7FC49E20EF82ED100F3BF2D /* TableDataSource.m */,
+				D745F58C0EFAB482002479FF /* Utility.h */,
+				D745F58D0EFAB487002479FF /* Utility.m */,
+				D706E9AE0ED9EDAB00A8FA7A /* Midi.h */,
+				D706E9AF0ED9EDAB00A8FA7A /* Midi.m */,
+				D7FC4A250EF8314A00F3BF2D /* ACollection.h */,
+				D7FC4A260EF8314A00F3BF2D /* ACollection.m */,
+				D744C93A0EFB0E2F00DB5FB7 /* Synths */,
+				D744C9390EFB0E1C00DB5FB7 /* Collection Items */,
+				D71DE06D0F02D93100F36F99 /* Notes.rtf */,
+				D7A3A4980F3241F700D55587 /* Definitions.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D7C3D6B30F0572B60069D34E /* MidiSetup.xib */,
+				32DBCF750370BD2300C91783 /* SynthLib_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D76497DE0EFFAFBB0037795C /* SynthLib.icns */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* SynthLib.nib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D744C9390EFB0E1C00DB5FB7 /* Collection Items */ = {
+			isa = PBXGroup;
+			children = (
+				D779F7300EFCEE2700292772 /* ACollectionItem.h */,
+				D779F7310EFCEE2700292772 /* ACollectionItem.m */,
+				D7C732620F36C08800DD2F17 /* Program */,
+				D7C732630F36C09100DD2F17 /* Mix */,
+				D7C732640F36C09B00DD2F17 /* Global */,
+				D7C731B00F36B2A900DD2F17 /* programs notes.rtf */,
+			);
+			name = "Collection Items";
+			sourceTree = "<group>";
+		};
+		D744C93A0EFB0E2F00DB5FB7 /* Synths */ = {
+			isa = PBXGroup;
+			children = (
+				D7F6D9870EDB1CEF003BBFEF /* ASynth.h */,
+				D7F6D9880EDB1CEF003BBFEF /* ASynth.m */,
+				D7AC8AAD0EDD1BB400157098 /* AlesisAndromeda.h */,
+				D718786C0EF8ECF200136C9E /* AlesisAndromeda.m */,
+				D745F3790EFAA980002479FF /* SynthFactory.h */,
+				D745F37A0EFAA980002479FF /* SynthFactory.m */,
+				D764DEBB0EFADB450004A53B /* YamahaPCM91.h */,
+				D764DEBC0EFADB450004A53B /* YamahaPCM91.m */,
+				D7AC8AAE0EDD1BB400157098 /* Andromeda.bak */,
+			);
+			name = Synths;
+			sourceTree = "<group>";
+		};
+		D7C732620F36C08800DD2F17 /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				D7FD06F40EDF0EAB0057BE5D /* AProgram.h */,
+				D7FD06F50EDF0EAB0057BE5D /* AProgram.m */,
+				D71B19690EF895E700FF948F /* AndromedaProgram.h */,
+				D71B196A0EF895E700FF948F /* AndromedaProgram.m */,
+				D7CAA7940EFB2CF400D51DD8 /* YamahaPCM91Program.h */,
+				D7CAA7950EFB2CF400D51DD8 /* YamahaPCM91Program.m */,
+			);
+			name = Program;
+			sourceTree = "<group>";
+		};
+		D7C732630F36C09100DD2F17 /* Mix */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3A58B0F324B6700D55587 /* AMix.h */,
+				D7A3A58C0F324B6700D55587 /* AMix.m */,
+				D7A3A58E0F324EEE00D55587 /* AndromedaMix.h */,
+				D7A3A58F0F324EEE00D55587 /* AndromedaMix.m */,
+			);
+			name = Mix;
+			sourceTree = "<group>";
+		};
+		D7C732640F36C09B00DD2F17 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3A4940F32419600D55587 /* AGlobalDump.h */,
+				D7A3A4950F32419600D55587 /* AGlobalDump.m */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* SynthLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "SynthLib" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynthLib;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SynthLib;
+			productReference = 8D15AC370486D014006FF6A4 /* SynthLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "SynthLib" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* SynthLib */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* SynthLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* SynthLib.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				D76497DF0EFFAFBB0037795C /* SynthLib.icns in Resources */,
+				D71DE06E0F02D93100F36F99 /* Notes.rtf in Resources */,
+				D7C3D6B40F0572B60069D34E /* MidiSetup.xib in Resources */,
+				D7C731B10F36B2A900DD2F17 /* programs notes.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* SynthLib.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				D706E9B00ED9EDAB00A8FA7A /* Midi.m in Sources */,
+				D7F6D9890EDB1CEF003BBFEF /* ASynth.m in Sources */,
+				D7FD06F60EDF0EAB0057BE5D /* AProgram.m in Sources */,
+				D7FC49E30EF82ED100F3BF2D /* TableDataSource.m in Sources */,
+				D7FC4A270EF8314A00F3BF2D /* ACollection.m in Sources */,
+				D71B196B0EF895E700FF948F /* AndromedaProgram.m in Sources */,
+				D718786D0EF8ECF200136C9E /* AlesisAndromeda.m in Sources */,
+				D745F37B0EFAA980002479FF /* SynthFactory.m in Sources */,
+				D745F58E0EFAB487002479FF /* Utility.m in Sources */,
+				D764DEBD0EFADB450004A53B /* YamahaPCM91.m in Sources */,
+				D7CAA7960EFB2CF400D51DD8 /* YamahaPCM91Program.m in Sources */,
+				D779F7320EFCEE2700292772 /* ACollectionItem.m in Sources */,
+				D77D05DD0EFF8034004BCC75 /* AppDelegate.m in Sources */,
+				D7D678100F00C748001AACAC /* MyTableView.m in Sources */,
+				D7A3A4960F32419600D55587 /* AGlobalDump.m in Sources */,
+				D7A3A58D0F324B6700D55587 /* AMix.m in Sources */,
+				D7A3A5900F324EEE00D55587 /* AndromedaMix.m in Sources */,
+				D795C9840F337CE300E08E59 /* MidiSetup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* SynthLib.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = SynthLib.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(inherited)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"/Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/CoreMIDI.framework/Versions/A\"";
+				PRODUCT_NAME = SynthLib;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SYMROOT = "/Users/cantgetnosleep/Programming Documents/SynthLib";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(inherited)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5u.sdk/System/Library/Frameworks\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/CoreMIDI.framework/Versions/A\"";
+				PRODUCT_NAME = SynthLib;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SYMROOT = "/Users/cantgetnosleep/Programming Documents/SynthLib";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "SynthLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "SynthLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

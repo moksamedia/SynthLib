@@ -1,0 +1,733 @@
+TSynthLib
+v7
+r0
+t332528061.954484
+cCheck dependencies
+cProcessInfoPlistFile "/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Info.plist" Info.plist
+cCpResource Debug/SynthLib.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
+cStripNIB "/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/MainMenu.nib"
+cStripNIB "/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/SynthLib.nib"
+cCopyStringsFile "/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCpResource Debug/SynthLib.app/Contents/Resources/SynthLib.icns SynthLib.icns
+cCpResource Debug/SynthLib.app/Contents/Resources/Notes.rtf Notes.rtf
+cCompileXIB "/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.xib"
+cCpResource "Debug/SynthLib.app/Contents/Resources/programs notes.rtf" "programs notes.rtf"
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthLib.o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/main.o "/Users/cantgetnosleep/Programming Documents/SynthLib/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Midi.o "/Users/cantgetnosleep/Programming Documents/SynthLib/Midi.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ASynth.o "/Users/cantgetnosleep/Programming Documents/SynthLib/ASynth.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AProgram.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AProgram.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/TableDataSource.o "/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ACollection.o "/Users/cantgetnosleep/Programming Documents/SynthLib/ACollection.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaProgram.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AlesisAndromeda.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AlesisAndromeda.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthFactory.o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthFactory.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Utility.o "/Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91.o "/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91Program.o "/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91Program.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ACollectionItem.o "/Users/cantgetnosleep/Programming Documents/SynthLib/ACollectionItem.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AppDelegate.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/MyTableView.o "/Users/cantgetnosleep/Programming Documents/SynthLib/MyTableView.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AGlobalDump.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AGlobalDump.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AMix.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AMix.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaMix.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaMix.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/MidiSetup.o "/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004C445C5F00000000000000EE
+t1279548511
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+c000000004B760CC40000000000012E50
+t1266027716
+s77392
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers/MIDIServices.h
+c000000004864A23C00000000000100FC
+t1214554684
+s65788
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004864A1C900000000000012EE
+t1214554569
+s4846
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/ACollection.h
+c000000004980BE3800000000000006E0
+t1233174072
+s1760
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/ACollection.m
+c0000000049867DEE0000000000001E07
+t1233550830
+s7687
+i"ACollection.h"
+i"ACollectionItem.h"
+i"AProgram.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/ACollectionItem.h
+c000000004987DCA2000000000000063A
+t1233640610
+s1594
+i<Cocoa/Cocoa.h>
+i"ASynth.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/ACollectionItem.m
+c000000004987E1CE0000000000001134
+t1233641934
+s4404
+i"ACollectionItem.h"
+i"SynthFactory.h"
+i"SynthLib.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AGlobalDump.h
+c00000000498213AC00000000000001F1
+t1233261484
+s497
+i<Foundation/Foundation.h>
+i"ACollectionItem.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AGlobalDump.m
+c000000004982131100000000000008DC
+t1233261329
+s2268
+i"AGlobalDump.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AMix.h
+c00000000498218130000000000000350
+t1233262611
+s848
+i<Cocoa/Cocoa.h>
+i"ACollectionItem.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AMix.m
+c00000000498689980000000000000B2D
+t1233553816
+s2861
+i"AMix.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AProgram.h
+c0000000049868A0F0000000000000590
+t1233553935
+s1424
+i<Cocoa/Cocoa.h>
+i"ASynth.h"
+i"ACollectionItem.h"
+i"Definitions.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AProgram.m
+c00000000498688950000000000000B6A
+t1233553557
+s2922
+i"AProgram.h"
+i"SynthFactory.h"
+i"SynthLib.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/ASynth.h
+c0000000049868359000000000000083F
+t1233552217
+s2111
+i<Cocoa/Cocoa.h>
+i"Midi.h"
+i"ACollection.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/ASynth.m
+c00000000498682EE0000000000000C0D
+t1233552110
+s3085
+i"ASynth.h"
+i"SynthLib.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AlesisAndromeda.h
+c00000000498688C00000000000000815
+t1233553600
+s2069
+i<Cocoa/Cocoa.h>
+i"SynthLib.h"
+i"ASynth.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AlesisAndromeda.m
+c00000000498677620000000000002A65
+t1233549154
+s10853
+i"AlesisAndromeda.h"
+i"AProgram.h"
+i"ACollectionItem.h"
+i"AndromedaProgram.h"
+i"AndromedaMix.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaMix.h
+c000000004982181E00000000000000E3
+t1233262622
+s227
+i<Cocoa/Cocoa.h>
+i"AMix.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaMix.m
+c00000000498217FD00000000000001DF
+t1233262589
+s479
+i"AndromedaMix.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.h
+c00000000495120D900000000000001E7
+t1230053593
+s487
+i<Cocoa/Cocoa.h>
+i"AProgram.h"
+i"SynthLib.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m
+c000000004987DFE00000000000001BAB
+t1233641440
+s7083
+i"AndromedaProgram.h"
+i"AlesisAndromeda.h"
+i"Utility.h"
+i"SynthFactory.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AppDelegate.h
+c000000004955399300000000000001A5
+t1230322067
+s421
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/AppDelegate.m
+c00000000495539B200000000000001B3
+t1230322098
+s435
+i"AppDelegate.h"
+i"SynthFactory.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app
+t1253205884
+s102
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Info.plist
+t1233351701
+s1317
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/MacOS/SynthLib
+t1253205884
+s154304
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/PkgInfo
+t1233351701
+s8
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/English.lproj/Credits.rtf
+t1233259293
+s436
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1233259294
+s204
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/English.lproj/MainMenu.nib
+t1233339702
+s170
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/English.lproj/SynthLib.nib
+t1233550319
+s170
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/MidiSetup.nib
+t1233351982
+s15397
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/Notes.rtf
+t1233259294
+s1228
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/SynthLib.icns
+t1233259294
+s133489
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/programs notes.rtf
+t1233550319
+s4053
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Definitions.h
+c0000000049867C180000000000000253
+t1233550360
+s595
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/Credits.rtf
+c000000004929AEE500000000000001B4
+t1227468517
+s436
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/InfoPlist.strings
+c000000004929AEE500000000000000CC
+t1227468517
+s204
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/MainMenu.nib
+c000000004983446900000000000000AA
+t1233339497
+s170
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/SynthLib.nib
+c0000000049837D9B00000000000000AA
+t1233354139
+s170
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Midi.h
+c0000000049867F4F00000000000005CB
+t1233551183
+s1483
+i<Cocoa/Cocoa.h>
+i<CoreMidi/MidiServices.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Midi.m
+c00000000497FB1680000000000001E2F
+t1233105256
+s7727
+i"Midi.h"
+i"ASynth.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.h
+c0000000049867F4E0000000000000680
+t1233551182
+s1664
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.m
+c00000000498682D000000000000028CA
+t1233552080
+s10442
+i"MidiSetup.h"
+i"Definitions.h"
+i"SynthLib.h"
+i"ASynth.h"
+i<CoreMidi/MidiServices.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.xib
+c000000004983752B000000000001089B
+t1233351979
+s67739
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/MyTableView.h
+c00000000495099CA00000000000000D8
+t1230019018
+s216
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/MyTableView.m
+c0000000049509BB50000000000000233
+t1230019509
+s563
+i"MyTableView.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Notes.rtf
+c000000004952A28900000000000004CC
+t1230152329
+s1228
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthFactory.h
+c000000004987D98F00000000000001CA
+t1233639823
+s458
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthFactory.m
+c000000004987DA640000000000000C68
+t1233640036
+s3176
+i"SynthFactory.h"
+i"ASynth.h"
+i"AlesisAndromeda.h"
+i"YamahaPCM91.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ACollection.o
+t1253205876
+s45684
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ACollectionItem.o
+t1253205880
+s34848
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AGlobalDump.o
+t1253205882
+s28444
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AMix.o
+t1253205883
+s29388
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AProgram.o
+t1253205875
+s29540
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ASynth.o
+t1253205874
+s29588
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AlesisAndromeda.o
+t1253205878
+s42536
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaMix.o
+t1253205883
+s19672
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaProgram.o
+t1310835261
+s34464
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AppDelegate.o
+t1253205881
+s15264
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Midi.o
+t1253205874
+s20708
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/MidiSetup.o
+t1253205884
+s54992
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/MyTableView.o
+t1253205881
+s19584
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthFactory.o
+t1253205878
+s27976
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthLib.LinkFileList
+c000000004E21C23C0000000000000990
+t1310835260
+s2448
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthLib.o
+t1310835261
+s77656
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/TableDataSource.o
+t1310835261
+s30324
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Utility.o
+t2
+s0
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91.o
+t1310835261
+s38064
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91Program.o
+t1253205880
+s38004
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/main.o
+t1253205873
+s4828
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.h
+c00000000498681C100000000000011D8
+t1233551809
+s4568
+i<Cocoa/Cocoa.h>
+i<CoreMidi/MidiServices.h>
+i"Midi.h"
+i"ASynth.h"
+i"TableDataSource.h"
+i"ACollection.h"
+i"MyTableView.h"
+i"Definitions.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.icns
+c0000000049501B1A0000000000020971
+t1229986586
+s133489
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m
+c000000004987E16B0000000000006B34
+t1233641835
+s27444
+i"SynthLib.h"
+i"AlesisAndromeda.h"
+i"YamahaPCM91.h"
+i"AProgram.h"
+i"AndromedaProgram.h"
+i"YamahaPCM91Program.h"
+i"SynthFactory.h"
+i"Utility.h"
+i"Definitions.h"
+i"MidiSetup.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.h
+c000000004951F7E70000000000000640
+t1230108647
+s1600
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m
+c0000000049867D5E0000000000001F8A
+t1233550686
+s8074
+i"TableDataSource.h"
+i"ACollection.h"
+i"AProgram.h"
+i"SynthLib.h"
+i"Utility.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/Utility.h
+c000000004C72B5F40000000000000A70
+t1282586100
+s2672
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.h
+c0000000049820F900000000000000706
+t1233260432
+s1798
+i<Cocoa/Cocoa.h>
+i"ASynth.h"
+i"YamahaPCM91Program.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m
+c00000000498210D000000000000023E3
+t1233260752
+s9187
+i"YamahaPCM91.h"
+i"YamahaPCM91Program.h"
+i"ACollectionItem.h"
+i"SynthLib.h"
+i"Utility.h"
+i"AProgram.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91Program.h
+c00000000494CBB2000000000000001F8
+t1229765408
+s504
+i<Cocoa/Cocoa.h>
+i"YamahaPCM91.h"
+i"AProgram.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91Program.m
+c000000004987DFE500000000000017A4
+t1233641445
+s6052
+i"YamahaPCM91Program.h"
+i"SynthFactory.h"
+i"SynthLib.h"
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/main.m
+c000000004929AEE50000000000000100
+t1227468517
+s256
+i<Cocoa/Cocoa.h>
+
+N/Users/cantgetnosleep/Programming Documents/SynthLib/programs notes.rtf
+c0000000049867B450000000000000FD5
+t1233550149
+s4053
+
+NInfo.plist
+c000000004983726D000000000000056E
+t1233351277
+s1390
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies332528060#332528060#0(0"0(0#1#0"8608334592#0"0#
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ACollection.o "/Users/cantgetnosleep/Programming Documents/SynthLib/ACollection.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ACollectionItem.o "/Users/cantgetnosleep/Programming Documents/SynthLib/ACollectionItem.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AGlobalDump.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AGlobalDump.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AMix.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AMix.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AProgram.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AProgram.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/ASynth.o "/Users/cantgetnosleep/Programming Documents/SynthLib/ASynth.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AlesisAndromeda.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AlesisAndromeda.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaMix.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaMix.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaProgram.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332528060.881680
+e332528061.879516
+r1
+xCompileC
+xSynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaProgram.o
+x/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m332528060#332528061#0(0"0(0#0#71"/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m8608375104#1076"    cd "/Users/cantgetnosleep/Programming Documents/SynthLib"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/SynthLib.hmap" "-F/Users/cantgetnosleep/Programming Documents/SynthLib/Debug" -F/Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks "-I/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/include" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources/i386" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources" -c "/Users/cantgetnosleep/Programming Documents/SynthLib/AndromedaProgram.m" -o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AndromedaProgram.o"0#
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/AppDelegate.o "/Users/cantgetnosleep/Programming Documents/SynthLib/AppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Midi.o "/Users/cantgetnosleep/Programming Documents/SynthLib/Midi.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/MidiSetup.o "/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/MyTableView.o "/Users/cantgetnosleep/Programming Documents/SynthLib/MyTableView.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthFactory.o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthFactory.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthLib.o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332528060.879240
+e332528061.954395
+r1
+xCompileC
+xSynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthLib.o
+x/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib windowControllerDidLoadNib:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: (Messages without a matching method signature
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: will be assumed to return 'id' and accept
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: '...' as arguments.)
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:172: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib setUndoPoint]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:457: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:458: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib setValueForIdentifier:row:objectValue:collection:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:506: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:507: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib setTheCollection:hiddenCollection:forCollection:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:516: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:517: warning: 'Utility' may not respond to '+sharedUndoManager'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib selectSelection:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:612: warning: unused variable 'comboBoxIndex'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib getSelectedSynth]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:633: warning: return makes integer from pointer without a cast
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib andromedaSendProgram:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:675: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib pcm91SendProgram:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:756: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:770: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib pcm91SendProgramToEditBuffer:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:785: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:794: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+lSLF07#2@71"Compile /Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m332528060#332528061#0(3334"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib windowControllerDidLoadNib:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: (Messages without a matching method signature/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: will be assumed to return 'id' and accept/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:146: warning: '...' as arguments.)/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:172: warning: 'Utility' may not respond to '+runAlertWithMessage:'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib setUndoPoint]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:457: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:458: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib setValueForIdentifier:row:objectValue:collection:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:506: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:507: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib setTheCollection:hiddenCollection:forCollection:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:516: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:517: warning: 'Utility' may not respond to '+sharedUndoManager'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib selectSelection:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:612: warning: unused variable 'comboBoxIndex'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib getSelectedSynth]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:633: warning: return makes integer from pointer without a cast/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib andromedaSendProgram:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:675: warning: 'Utility' may not respond to '+runAlertWithMessage:'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib pcm91SendProgram:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:756: warning: 'Utility' may not respond to '+runAlertWithMessage:'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:770: warning: 'Utility' may not respond to '+runAlertWithMessage:'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m: In function '-[SynthLib pcm91SendProgramToEditBuffer:]':/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:785: warning: 'Utility' may not respond to '+runAlertWithMessage:'/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m:794: warning: 'Utility' may not respond to '+runAlertWithMessage:'16(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#120#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#146#0#146#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)332528061#248#124#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#146#0#146#0#0"0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#591#131#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#172#0#172#0#26"'*' may not respond to '*'0(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#827#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#457#0#457#0#26"'*' may not respond to '*'0(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#955#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#458#0#458#0#26"'*' may not respond to '*'0(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#1225#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#506#0#506#0#26"'*' may not respond to '*'0(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#1353#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#507#0#507#0#26"'*' may not respond to '*'0(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#1622#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#516#0#516#0#26"'*' may not respond to '*'0(22@49"'Utility' may not respond to '+sharedUndoManager'332528061#1750#128#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#517#0#517#0#26"'*' may not respond to '*'0(22@31"Unused variable 'comboBoxIndex'332528061#1987#110#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#612#0#612#0#19"unused variable '*'0(22@48"Return makes integer from pointer without a cast332528061#2206#127#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#633#0#633#0#0"0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#2447#131#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#675#0#675#0#26"'*' may not respond to '*'0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#2688#131#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#756#0#756#0#26"'*' may not respond to '*'0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#2819#131#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#770#0#770#0#26"'*' may not respond to '*'0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#3072#131#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#785#0#785#0#26"'*' may not respond to '*'0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#3203#131#0(6@63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m255334635#794#0#794#0#26"'*' may not respond to '*'0(0#0#63"/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m8609993248#1060"    cd "/Users/cantgetnosleep/Programming Documents/SynthLib"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/SynthLib.hmap" "-F/Users/cantgetnosleep/Programming Documents/SynthLib/Debug" -F/Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks "-I/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/include" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources/i386" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources" -c "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.m" -o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/SynthLib.o"0#
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/TableDataSource.o "/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332528060.880599
+e332528061.863651
+r1
+xCompileC
+xSynthLib.build/Debug/SynthLib.build/Objects-normal/i386/TableDataSource.o
+x/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m332528060#332528061#0(0"0(0#0#70"/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m8608566688#1074"    cd "/Users/cantgetnosleep/Programming Documents/SynthLib"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/SynthLib.hmap" "-F/Users/cantgetnosleep/Programming Documents/SynthLib/Debug" -F/Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks "-I/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/include" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources/i386" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources" -c "/Users/cantgetnosleep/Programming Documents/SynthLib/TableDataSource.m" -o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/TableDataSource.o"0#
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Utility.o "/Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332528060.882962
+e332528060.891169
+r0
+xCompileC
+xSynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Utility.o
+x/Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@85"Compile /Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m332528060#332528060#0(334"i686-apple-darwin10-gcc-4.2.1: /Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/usr/bin/gcc-4.2 failed with exit code 11(4@58"Command /Developer/usr/bin/gcc-4.2 failed with exit code 1332528060#18446744073709551615#0#0(1@0"0(0#0#77"/Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m8602820320#1073"    cd "/Users/cantgetnosleep/Programming Documents/SynthLib"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/SynthLib.hmap" "-F/Users/cantgetnosleep/Programming Documents/SynthLib/Debug" -F/Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks "-I/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/include" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources/i386" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources" -c "/Users/cantgetnosleep/Programming Documents/SynthLib/../StoryWriter/Utility.m" -o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/Utility.o"1#
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91.o "/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332528060.891312
+e332528061.913613
+r1
+xCompileC
+xSynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91.o
+x/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m: In function '-[YamahaPCM91 receiveSysexMessage:]':
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:141: warning: format not a string literal and no format arguments
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: (Messages without a matching method signature
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: will be assumed to return 'id' and accept
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: '...' as arguments.)
+o/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:179: warning: 'Utility' may not respond to '+runAlertWithMessage:'
+lSLF07#2@74"Compile /Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m332528060#332528061#0(872"/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m: In function '-[YamahaPCM91 receiveSysexMessage:]':/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:141: warning: format not a string literal and no format arguments/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: 'Utility' may not respond to '+runAlertWithMessage:'/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: (Messages without a matching method signature/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: will be assumed to return 'id' and accept/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:151: warning: '...' as arguments.)/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m:179: warning: 'Utility' may not respond to '+runAlertWithMessage:'4(22@51"Format not a string literal and no format arguments332528061#119#133#0(6@66"/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m254953552#141#0#141#0#51"format not a string literal and no format arguments0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#252#134#0(6@66"/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m254953552#151#0#151#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)332528061#386#127#0(6@66"/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m254953552#151#0#151#0#0"0(22@52"'Utility' may not respond to '+runAlertWithMessage:'332528061#738#134#0(6@66"/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m254953552#179#0#179#0#26"'*' may not respond to '*'0(0#0#66"/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m8613247488#1066"    cd "/Users/cantgetnosleep/Programming Documents/SynthLib"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/SynthLib.hmap" "-F/Users/cantgetnosleep/Programming Documents/SynthLib/Debug" -F/Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks "-I/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/include" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources/i386" "-I/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/DerivedSources" -c "/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91.m" -o "/Users/cantgetnosleep/Programming Documents/SynthLib/SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91.o"0#
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/YamahaPCM91Program.o "/Users/cantgetnosleep/Programming Documents/SynthLib/YamahaPCM91Program.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC SynthLib.build/Debug/SynthLib.build/Objects-normal/i386/main.o "/Users/cantgetnosleep/Programming Documents/SynthLib/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB "/Users/cantgetnosleep/Programming Documents/SynthLib/MidiSetup.xib"
+r0
+
+CCopyStringsFile "/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+r0
+
+CCpResource "Debug/SynthLib.app/Contents/Resources/programs notes.rtf" "programs notes.rtf"
+r0
+
+CCpResource Debug/SynthLib.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
+r0
+
+CCpResource Debug/SynthLib.app/Contents/Resources/Notes.rtf Notes.rtf
+r0
+
+CCpResource Debug/SynthLib.app/Contents/Resources/SynthLib.icns SynthLib.icns
+r0
+
+CLd "/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/MacOS/SynthLib" normal i386
+r0
+
+CProcessInfoPlistFile "/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app/Contents/Info.plist" Info.plist
+r0
+
+CStripNIB "/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/MainMenu.nib"
+r0
+
+CStripNIB "/Users/cantgetnosleep/Programming Documents/SynthLib/English.lproj/SynthLib.nib"
+r0
+
+CTouch "/Users/cantgetnosleep/Programming Documents/SynthLib/Debug/SynthLib.app"
+r0
+

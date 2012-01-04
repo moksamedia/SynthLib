@@ -1,0 +1,56 @@
+{
+    IBClasses =     (
+                {
+            CLASS = ASynth;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = MyDocument;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSDocument;
+        },
+                {
+            ACTIONS =             {
+                activeSynthDidChange = id;
+                andromedaGetProgram = id;
+                andromedaGetProgramEditBuffer = id;
+                andromedaGetProgramSelectComboBoxChange = id;
+                andromedaSendProgram = id;
+                andromedaSendProgramSelectComboBoxChange = id;
+                pcm91GetProgram = id;
+                pcm91GetProgramEditBuffer = id;
+                pcm91GetProgramSelectComboBoxChange = id;
+                pcm91SendProgram = id;
+                pcm91SendProgramSelectComboBoxChange = id;
+            };
+            CLASS = SynthLib;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                andromedaBankSelectComboBox = NSComboBox;
+                andromedaProgramSelectComboBox = NSComboBox;
+                andromedaSendProgramSelectComboBox = NSComboBox;
+                filterTableActiveSynthCheckBox = NSButton;
+                pcm91BankSelectComboBox = NSComboBox;
+                pcm91ProgramSelectComboBox = NSComboBox;
+                pcm91SendBankSelectComboBox = NSComboBox;
+                pcm91SendProgramSelectComboBox = NSComboBox;
+                synthSelectComboBox = NSComboBox;
+                synthSelectTabView = NSTabView;
+                tableView = NSTableView;
+            };
+            SUPERCLASS = NSDocument;
+        },
+                {
+            CLASS = TableDataSource;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}
